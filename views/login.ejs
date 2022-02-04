@@ -1,0 +1,10 @@
+<body>
+    <%- include('parts/header'); -%>
+    <form action="/login" method="POST">
+        <p>E-mail<input type="text" name="mail"/></p>
+        <p>Mot de passe<input type="text" name="password"/></p>
+        <input type="submit" name="se connecter"/>
+    </form>
+    <p>Vous n'avez pas encore de compte ? <a href="/register">inscrivez vous</a> !</p>
+    <%- include('parts/footer'); -%>
+</body>

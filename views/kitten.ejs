@@ -1,0 +1,15 @@
+<body>
+    <%- include('parts/header'); -%>
+    <form action="/search" method="post">
+        <input type="text" name="name" id="name"></input>
+        <input type="submit" value="chercher">
+    </form>
+    <ul>
+        <% for(let kitten of kittens) {%>
+            <li><%= kitten.name %></li>
+            <li><%= kitten.age %> ans </li>
+            <li>Ajouté le <%= kitten.ajout %> </li>
+        <% } %>
+    </ul>
+    <%- include('parts/footer'); -%>
+</body>
